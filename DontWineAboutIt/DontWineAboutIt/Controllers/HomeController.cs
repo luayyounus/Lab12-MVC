@@ -18,13 +18,13 @@ namespace DontWineAboutIt.Controllers
         [HttpPost]
         public IActionResult Index(string name, string price, string points)
         {
-            ViewBag.Name = name;
             return RedirectToAction("Results", new {name, price, points});
         }
 
         [HttpGet]
         public IActionResult Results(string name, string price, string points)
         {
+            ViewBag.Name = name;
             List<Wine> wineList = Wine.FilterWineList(price, points);
             return View(wineList);
         }
