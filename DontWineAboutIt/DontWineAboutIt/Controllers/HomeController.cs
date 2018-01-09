@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DontWineAboutIt.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DontWineAboutIt.Controllers
@@ -15,15 +16,17 @@ namespace DontWineAboutIt.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index()
+        public IActionResult Index(string name, string price, string points)
         {
-            return RedirectToAction("Results");
+            Wine wine = new Wine();
+            List<Wine> wineList = Wine.FilterWineList(price, points);
+            return RedirectToAction("Results", wineList);
         }
 
         [HttpGet]
-        public IActionResult Results()
+        public IActionResult Results(List<Wine> list)
         {
-            return View();
+            return View(list);
         }
     }
 }
