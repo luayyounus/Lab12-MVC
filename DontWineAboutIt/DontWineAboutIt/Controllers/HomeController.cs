@@ -18,7 +18,7 @@ namespace DontWineAboutIt.Controllers
         [HttpPost]
         public IActionResult Index(string name, string price, string points)
         {
-
+            ViewBag.Name = name;
             return RedirectToAction("Results", new {name, price, points});
         }
 

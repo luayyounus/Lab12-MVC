@@ -2,6 +2,10 @@
 
 @{}
 
+<p>
+    Hi @ViewBag.Name
+</p>
+
 @foreach (var wine in Model)
 {
     <li>@wine.Description @wine.Designation @wine.Region1 @wine.Region2 @wine.Country @wine.Winery</li>
