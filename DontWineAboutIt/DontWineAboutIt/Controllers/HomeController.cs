@@ -25,8 +25,9 @@ namespace DontWineAboutIt.Controllers
         public IActionResult Results(string name, string price, string points)
         {
             ViewBag.Name = name;
-            List<Wine> wineList = Wine.FilterWineList(price, points);
-            return View(wineList);
+            List<Wine> allWines = Wine.GetWineList();
+            List<Wine> filteredWines = allWines.Where(w => w.Price == price).Where(w => w.Points == points).ToList(); ;
+            return View(filteredWines);
         }
     }
 }

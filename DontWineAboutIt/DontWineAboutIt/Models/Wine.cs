@@ -58,12 +58,5 @@ namespace DontWineAboutIt.Models
             }
             return myWine;
         }
-
-        public static List<Wine> FilterWineList(string price, string pointRating)
-        {
-            List<Wine> allWines = GetWineList();
-            IEnumerable<Wine> filteredByPrice = allWines.Where(w => w.Price == price);
-            return filteredByPrice.Where(w => w.Points == pointRating).ToList();
-        }
     }
 }
