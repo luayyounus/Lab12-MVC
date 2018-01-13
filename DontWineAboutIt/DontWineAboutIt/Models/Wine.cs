@@ -31,7 +31,7 @@ namespace DontWineAboutIt.Models
                 string line;
 
                 //only grab the top 1000 wines. 
-                while (((line = reader.ReadLine()) != null) && counter < 2000)
+                while (((line = reader.ReadLine()) != null) && counter < 10000)
                 {
                     Regex parser = new Regex(",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
 
@@ -47,10 +47,11 @@ namespace DontWineAboutIt.Models
                         Designation = wineList[3],
                         Points = wineList[4],
                         Price = wineList[5],
-                        Region1 = wineList[6],
-                        Region2 = wineList[7],
-                        Variety = wineList[8],
-                        Winery = wineList[9]
+                        Province = wineList[6],
+                        Region1 = wineList[7],
+                        Region2 = wineList[8],
+                        Variety = wineList[9],
+                        Winery = wineList[10]
                     });
 
                     counter++;

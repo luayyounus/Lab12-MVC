@@ -1,15 +1,50 @@
-﻿@model List<DontWineAboutIt.Models.Wine>
-
-@{}
-
-<link href="style.css" rel="stylesheet">
-
-
-<p>
-    Hi @ViewBag.Name
-</p>
-
-@foreach (var wine in Model)
-{
-    <li>@wine.Description @wine.Designation @wine.Region1 @wine.Region2 @wine.Country @wine.Winery</li>
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
 }
+
+@model List<DontWineAboutIt.Models.Wine>
+
+<link href="~/Style.css" rel="stylesheet" type="text/css" />
+
+@if (Model.Count == 0)
+{
+    <div id="no-wines-available">
+        No Wines available, look up different prices and points.
+    </div>
+}
+else
+{
+    <div id="table-with-title">
+        <div class="hi-name">
+            <h3>
+                Hi @ViewBag.Name
+            </h3>
+        </div>
+
+        <table>
+            <tr>
+                <th>Country</th>
+                <th>Description</th>
+                <th>Description</th>
+                <th>Points</th>
+                <th>Price</th>
+                <th>Winery</th>
+            </tr>
+
+            @foreach (var wine in Model)
+            {
+                <tr>
+                    <td>@wine.Country</td>
+                    <td>@wine.Description</td>
+                    <td>@wine.Designation</td>
+                    <td>@wine.Points</td>
+                    <td>@wine.Price</td>
+                    <td>@wine.Winery</td>
+                </tr>
+            }
+        </table>
+    </div>
+}
+
