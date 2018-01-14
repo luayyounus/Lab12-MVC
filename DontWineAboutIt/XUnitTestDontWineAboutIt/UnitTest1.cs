@@ -3,13 +3,6 @@ using Xunit;
 using DontWineAboutIt.Controllers;
 using DontWineAboutIt.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using DontWineAboutIt.Controllers;
-using Xunit;
 
 namespace XUnitTestDontWineAboutIt
 {
