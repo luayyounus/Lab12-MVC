@@ -172,9 +172,10 @@ table {
 }
 
 #no-wines-available {
-    margin: 20% 30% 0 30%;
+    margin: 20% 30% 0 25%;
     font-size: 20px;
     font-family: cursive;
+    display:inline-block;
 }
 
 hr {
