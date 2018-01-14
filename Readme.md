@@ -1,6 +1,7 @@
 # Wine Store ASP.NET Core Application
 **Author**: Luay Younus
-**Version**: 1.0
+
+[Click Here to Open the Website Deployed on Azure](http://wineshopper.azurewebsites.net)
 
 ## Overview
 This is a store that allows you to search for different types of wins based on Country, Price, quality points, and others. A detailed list of wines will be the result.

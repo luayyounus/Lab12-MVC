@@ -1,0 +1,395 @@
+﻿html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: aliceblue;
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    color: white;
+    margin: 0;
+    line-height: 1.5;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    margin-top: 0;
+    margin-bottom: 0.5rem
+}
+
+#navbar-logo {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+    #navbar-logo img {
+        width: 70px;
+        margin: 5px 5px;
+    }
+
+#website-title {
+    margin: 0 auto;
+    padding-top: 30px;
+    font-family: 'Sakkal Majalla';
+    font-size: 80px;
+    color: #00bc8c;
+    padding: 0px;
+    text-align: center;
+    display: inline-block;
+}
+
+#banner {
+    width: 100%;
+    background-image: url(Images/wine-background.jpg);
+    height: 600px;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+form {
+    margin: 5% 60% 5% 10%;
+}
+
+a, area, button, [role="button"], input:not([type="range"]), label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: #444;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+}
+
+    .form-control::-ms-expand {
+        background-color: transparent;
+        border: 0
+    }
+
+    .form-control:focus {
+        color: #444;
+        background-color: #fff;
+        border-color: #739ac2;
+        outline: 0;
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(55,90,127,0.25);
+        box-shadow: 0 0 0 0.2rem rgba(55,90,127,0.25)
+    }
+
+    .form-control::-webkit-input-placeholder {
+        color: #999;
+        opacity: 1
+    }
+
+    .form-control:-ms-input-placeholder {
+        color: #999;
+        opacity: 1
+    }
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+legend {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    color: inherit;
+    white-space: normal
+}
+
+.form-group {
+    margin-bottom: 1rem
+}
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem
+}
+
+small, .small {
+    font-size: 80%;
+    font-weight: 400
+}
+
+.form-text {
+    display: block;
+    margin-top: 0.25rem
+}
+
+.text-muted {
+    color: #999 !important
+}
+
+table {
+    margin: 4% 10% 5px 10%;
+    display: block;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+#no-wines-available {
+    margin: 20% 30% 0 30%;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    background-color: #F39C12;
+    height: 2px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    overflow: visible;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 1.2rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+}
+
+    .btn:focus, .btn:hover {
+        text-decoration: none
+    }
+
+    .btn:focus, .btn.focus {
+        outline: 0;
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(55,90,127,0.25);
+        box-shadow: 0 0 0 0.2rem rgba(55,90,127,0.25)
+    }
+
+    .btn.disabled, .btn:disabled {
+        opacity: 0.65
+    }
+
+    .btn:not([disabled]):not(.disabled) {
+        cursor: pointer
+    }
+
+        .btn:not([disabled]):not(.disabled):active, .btn:not([disabled]):not(.disabled).active {
+            background-image: none
+        }
+
+a.btn.disabled, fieldset[disabled] a.btn {
+    pointer-events: none
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #375a7f;
+    border-color: #375a7f
+}
+
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #2b4764;
+        border-color: #28415b
+    }
+
+
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #303030;
+    border-radius: 0.3rem
+}
+
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 4rem 2rem
+    }
+}
+
+.table {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent
+}
+
+    .table th, .table td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #444
+    }
+
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #444
+    }
+
+    .table tbody + tbody {
+        border-top: 2px solid #444
+    }
+
+    .table .table {
+        background-color: #222
+    }
+
+.table-sm th, .table-sm td {
+    padding: 0.3rem
+}
+
+.table-bordered {
+    border: 1px solid #444
+}
+
+    .table-bordered th, .table-bordered td {
+        border: 1px solid #444
+    }
+
+    .table-bordered thead th, .table-bordered thead td {
+        border-bottom-width: 2px
+    }
+
+
+.table-active, .table-active > th, .table-active > td {
+    background-color: rgba(0,0,0,0.075)
+}
+
+.table .thead-dark th {
+    color: #222;
+    background-color: #adb5bd;
+    border-color: #98a2ac
+}
+
+.table-dark {
+    color: #222;
+    background-color: #adb5bd
+}
+
+@media (max-width: 575.99px) {
+    .table-responsive-sm {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar
+    }
+
+        .table-responsive-sm > .table-bordered {
+            border: 0
+        }
+}
+
+@media (max-width: 767.99px) {
+    .table-responsive-md {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar
+    }
+
+        .table-responsive-md > .table-bordered {
+            border: 0
+        }
+}
+
+@media (max-width: 1199.99px) {
+    .table-responsive-xl {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar
+    }
+
+        .table-responsive-xl > .table-bordered {
+            border: 0
+        }
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar
+}
+
+    .table-responsive > .table-bordered {
+        border: 0
+    }
+
+
+.display-3 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2
+}
+
+.lead {
+    font-size: 1.171875rem;
+    font-weight: 300
+}
+
+#footer {
+    background-color: #333333;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 5em;
+    margin-top: 1em;
+    border-top: 1px solid #F39C12;
+}

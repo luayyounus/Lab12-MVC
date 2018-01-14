@@ -1,0 +1,11 @@
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\bin\Release\netcoreapp2.0\DontWineAboutIt.deps.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\bin\Release\netcoreapp2.0\DontWineAboutIt.runtimeconfig.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\bin\Release\netcoreapp2.0\DontWineAboutIt.runtimeconfig.dev.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\bin\Release\netcoreapp2.0\DontWineAboutIt.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\bin\Release\netcoreapp2.0\DontWineAboutIt.pdb
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\obj\Release\netcoreapp2.0\DontWineAboutIt.csprojResolveAssemblyReference.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\obj\Release\netcoreapp2.0\DontWineAboutIt.csproj.CoreCompileInputs.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\obj\Release\netcoreapp2.0\DontWineAboutIt.AssemblyInfoInputs.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\obj\Release\netcoreapp2.0\DontWineAboutIt.AssemblyInfo.cs
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\obj\Release\netcoreapp2.0\DontWineAboutIt.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\obj\Release\netcoreapp2.0\DontWineAboutIt.pdb
