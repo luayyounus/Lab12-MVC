@@ -1,0 +1,6 @@
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt
+--output-path=obj\Any CPU\Release\netcoreapp2.0\
+--application-name=DontWineAboutIt
+--content-root=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt
+--file=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\Views\Home\Index.cshtml
+--file=C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\DontWineAboutIt\Views\Home\Results.cshtml
