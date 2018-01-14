@@ -20,11 +20,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    margin-bottom: 0.5rem;
     font-family: inherit;
     font-weight: 500;
     line-height: 1.2;
-    color: inherit
+    color: inherit;
+    margin-top: 0;
+    margin-bottom: 0.5rem
 }
 
 #navbar-logo {
@@ -113,22 +114,6 @@ a, area, button, [role="button"], input:not([type="range"]), label, select, summ
         opacity: 1
     }
 
-    .form-control::-ms-input-placeholder {
-        color: #999;
-        opacity: 1
-    }
-
-    .form-control::placeholder {
-        color: #999;
-        opacity: 1
-    }
-
-    .form-control:disabled, .form-control[readonly] {
-        background-color: #ebebeb;
-        opacity: 1
-    }
-
-
 fieldset {
     min-width: 0;
     padding: 0;
@@ -212,9 +197,6 @@ hr {
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     border: 1px solid transparent;
     padding: 0.375rem 1.2rem;
@@ -265,26 +247,6 @@ a.btn.disabled, fieldset[disabled] a.btn {
         border-color: #28415b
     }
 
-    .btn-primary:focus, .btn-primary.focus {
-        -webkit-box-shadow: 0 0 0 0.2rem rgba(55,90,127,0.5);
-        box-shadow: 0 0 0 0.2rem rgba(55,90,127,0.5)
-    }
-
-    .btn-primary.disabled, .btn-primary:disabled {
-        background-color: #375a7f;
-        border-color: #375a7f
-    }
-
-    .btn-primary:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
-        color: #fff;
-        background-color: #28415b;
-        border-color: #243a53
-    }
-
-        .btn-primary:not([disabled]):not(.disabled):active:focus, .btn-primary:not([disabled]):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-            -webkit-box-shadow: 0 0 0 0.2rem rgba(55,90,127,0.5);
-            box-shadow: 0 0 0 0.2rem rgba(55,90,127,0.5)
-        }
 
 
 .jumbotron {
@@ -298,4 +260,136 @@ a.btn.disabled, fieldset[disabled] a.btn {
     .jumbotron {
         padding: 4rem 2rem
     }
+}
+
+.table {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent
+}
+
+    .table th, .table td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #444
+    }
+
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #444
+    }
+
+    .table tbody + tbody {
+        border-top: 2px solid #444
+    }
+
+    .table .table {
+        background-color: #222
+    }
+
+.table-sm th, .table-sm td {
+    padding: 0.3rem
+}
+
+.table-bordered {
+    border: 1px solid #444
+}
+
+    .table-bordered th, .table-bordered td {
+        border: 1px solid #444
+    }
+
+    .table-bordered thead th, .table-bordered thead td {
+        border-bottom-width: 2px
+    }
+
+
+.table-active, .table-active > th, .table-active > td {
+    background-color: rgba(0,0,0,0.075)
+}
+
+.table .thead-dark th {
+    color: #222;
+    background-color: #adb5bd;
+    border-color: #98a2ac
+}
+
+.table-dark {
+    color: #222;
+    background-color: #adb5bd
+}
+
+@media (max-width: 575.99px) {
+    .table-responsive-sm {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar
+    }
+
+        .table-responsive-sm > .table-bordered {
+            border: 0
+        }
+}
+
+@media (max-width: 767.99px) {
+    .table-responsive-md {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar
+    }
+
+        .table-responsive-md > .table-bordered {
+            border: 0
+        }
+}
+
+@media (max-width: 1199.99px) {
+    .table-responsive-xl {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar
+    }
+
+        .table-responsive-xl > .table-bordered {
+            border: 0
+        }
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar
+}
+
+    .table-responsive > .table-bordered {
+        border: 0
+    }
+
+
+.display-3 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2
+}
+
+.lead {
+    font-size: 1.171875rem;
+    font-weight: 300
+}
+
+#footer {
+    background-color: #333333;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 5em;
+    margin-top: 1em;
+    border-top: 1px solid #F39C12;
 }
