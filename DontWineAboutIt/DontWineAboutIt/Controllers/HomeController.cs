@@ -25,15 +25,28 @@ namespace DontWineAboutIt.Controllers
         public IActionResult Results(string name, Wine wine)
         {
             ViewBag.Name = name;
+            ViewBag.NotFiltered = false;
 
-            List<Wine> allWines = Wine.GetWineList();
+            List<Wine> allWines = Wine.GetWineList().Skip(1).ToList();
 
-            // Filtered based on the Price and Points
-            allWines = allWines.Where(w => w.Price == wine.Price).Where(w => w.Points == wine.Points).ToList();
+            // Filtered based on the Price
+            if (!String.IsNullOrEmpty(wine.Price))
+                allWines = allWines.Where(w => w.Price == wine.Price).ToList();
+
+            // Filtered based on the Points
+            if (!String.IsNullOrEmpty(wine.Price))
+                allWines = allWines.Where(w => w.Points == wine.Points).ToList();
 
             // Filtered based on Country if specified
             if (!String.IsNullOrEmpty(wine.Country))
                 allWines = allWines.Where(w => w.Country.ToLower() == wine.Country.ToLower()).ToList();
+
+            // Taking the first 100 items if not filtered
+            if (allWines.Count > 100)
+            {
+                allWines = allWines.Take(100).ToList();
+                ViewBag.NotFiltered = true;
+            }
 
             return View(allWines);
         }
