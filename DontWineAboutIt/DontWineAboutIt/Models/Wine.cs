@@ -31,7 +31,7 @@ namespace DontWineAboutIt.Models
                 string line;
 
                 //only grab the top 1000 wines. 
-                while (((line = reader.ReadLine()) != null) && counter < 10000)
+                while (((line = reader.ReadLine()) != null) && counter < 40000)
                 {
                     Regex parser = new Regex(",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
 

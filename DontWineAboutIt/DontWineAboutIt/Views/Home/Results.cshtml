@@ -1,35 +1,29 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-
-@model List<DontWineAboutIt.Models.Wine>
+﻿@model List<DontWineAboutIt.Models.Wine>
 
 <link href="~/Style.css" rel="stylesheet" type="text/css" />
 
 @if (Model.Count == 0)
 {
     <div id="no-wines-available">
-        No Wines available, look up different prices and points.
+        No Wines available, refine your search and try again!
     </div>
 }
 else
 {
     <div id="table-with-title">
-        <div class="hi-name">
+        <div class="welcome-message">
             <h3>
                 Hi @ViewBag.Name
             </h3>
         </div>
+        
+        <p>Here's a list of wines with price of @Model[0].Price and points of @Model[0].Points</p>
 
         <table>
             <tr>
                 <th>Country</th>
                 <th>Description</th>
-                <th>Description</th>
-                <th>Points</th>
-                <th>Price</th>
+                <th>Designation</th>
                 <th>Winery</th>
             </tr>
 
@@ -39,8 +33,6 @@ else
                     <td>@wine.Country</td>
                     <td>@wine.Description</td>
                     <td>@wine.Designation</td>
-                    <td>@wine.Points</td>
-                    <td>@wine.Price</td>
                     <td>@wine.Winery</td>
                 </tr>
             }

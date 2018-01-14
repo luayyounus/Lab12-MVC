@@ -1,16 +1,48 @@
 ﻿<link href="~/Style.css" rel="stylesheet" type="text/css" />
-    
-<p>Enter a price and points</p>
+
+@*<div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*@
+<div id="navbar-logo">
+    <a  href="/">
+        <img src="~/Icons/wine-bottle.png" />
+    </a>
+    <div>
+        <h2 id="website-title">The Wine Store</h2>
+    </div>
+</div>
+
+<hr />
+
+<div id="banner"></div>
+
+<hr />
 
 <form method="post">
-    <label for="Name">Name</label>
-    <input maxlength="20" name="Name" /> <br />
+    <fieldset>
+        <legend>Look up your favorite wines!</legend>
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" maxlength="20" name="Name" class="form-control" aria-describedby="userName" placeholder="Enter your name" />
+            <small id="emailHelp" class="form-text text-muted">This name will be used for future purchases.</small>
+        </div>
 
-    <label for="Price">Wine Price</label>
-    <input maxlength="3" name="Price" /> <br />
+        <div class="form-group">
+            <label for="Price">Wine Price</label>
+            <input type="number" maxlength="4" name="Price" class="form-control" aria-describedby="winePrice" placeholder="Enter the desired price" />
+        </div>
 
-    <label for="Points">Wine Points</label>
-    <input maxlength="10" name="Points" /> <br />
+        <div class="form-group">
+            <label for="Points">Wine Points (50-100)</label>
+            <input type="number" maxlength="4" name="Name" class="form-control" aria-describedby="winePoints" placeholder="Enter the desired wine quality by points" />
+        </div>
 
-    <button type="submit">Search!</button>
+        <div class="form-group">
+            <label for="Country">Origin of Wine (Optional)</label>
+            <input type="text" maxlength="20" name="Country" class="form-control" aria-describedby="wineOrigin" placeholder="Enter country name" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Find</button>
+
+    </fieldset>
 </form>
+
+<div id="footer"></div>

@@ -16,18 +16,26 @@ namespace DontWineAboutIt.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(string name, string price, string points)
+        public IActionResult Index(string name, Wine wine)
         {
-            return RedirectToAction("Results", new {name, price, points});
+            return RedirectToAction("Results", new {name, wine.Price, wine.Points, wine.Country});
         }
 
         [HttpGet]
-        public IActionResult Results(string name, string price, string points)
+        public IActionResult Results(string name, Wine wine)
         {
             ViewBag.Name = name;
+
             List<Wine> allWines = Wine.GetWineList();
-            List<Wine> filteredWines = allWines.Where(w => w.Price == price).Where(w => w.Points == points).ToList(); ;
-            return View(filteredWines);
+
+            // Filtered based on the Price and Points
+            allWines = allWines.Where(w => w.Price == wine.Price).Where(w => w.Points == wine.Points).ToList();
+
+            // Filtered based on Country if specified
+            if (!String.IsNullOrEmpty(wine.Country))
+                allWines = allWines.Where(w => w.Country.ToLower() == wine.Country.ToLower()).ToList();
+
+            return View(allWines);
         }
     }
 }
