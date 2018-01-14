@@ -10,33 +10,36 @@
 }
 else
 {
+
+
     <div id="table-with-title">
-        <div class="welcome-message">
-            <h3>
-                Hi @ViewBag.Name
-            </h3>
+        <div class="jumbotron">
+            <h1 class="display-3">Hello, @ViewBag.Name!</h1>
+            <p class="lead">Here's a list of wines priced <b>$@Model[0].Price</b> with quality points of <b>@Model[0].Points</b>.</p>
         </div>
-        
-        <p>Here's a list of wines with price of @Model[0].Price and points of @Model[0].Points</p>
 
-        <table>
-            <tr>
-                <th>Country</th>
-                <th>Description</th>
-                <th>Designation</th>
-                <th>Winery</th>
-            </tr>
-
-            @foreach (var wine in Model)
-            {
+        <table class="table table-hover">
+            <thead>
                 <tr>
+                    <th scope="col">Country</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Winery</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach(var wine in Model)
+                {
+                <tr class="table-active">
                     <td>@wine.Country</td>
                     <td>@wine.Description</td>
                     <td>@wine.Designation</td>
                     <td>@wine.Winery</td>
                 </tr>
-            }
+
+                }
+            </tbody>
         </table>
     </div>
 }
-
