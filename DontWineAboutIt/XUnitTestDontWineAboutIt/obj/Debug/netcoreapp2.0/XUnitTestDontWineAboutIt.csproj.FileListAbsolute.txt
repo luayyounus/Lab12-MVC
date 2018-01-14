@@ -1,0 +1,16 @@
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\bin\Debug\netcoreapp2.0\XUnitTestDontWineAboutIt.deps.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\bin\Debug\netcoreapp2.0\XUnitTestDontWineAboutIt.runtimeconfig.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\bin\Debug\netcoreapp2.0\XUnitTestDontWineAboutIt.runtimeconfig.dev.json
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\bin\Debug\netcoreapp2.0\XUnitTestDontWineAboutIt.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\bin\Debug\netcoreapp2.0\XUnitTestDontWineAboutIt.pdb
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\bin\Debug\netcoreapp2.0\DontWineAboutIt.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\bin\Debug\netcoreapp2.0\DontWineAboutIt.pdb
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\obj\Debug\netcoreapp2.0\XUnitTestDontWineAboutIt.csprojResolveAssemblyReference.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\obj\Debug\netcoreapp2.0\XUnitTestDontWineAboutIt.csproj.CoreCompileInputs.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\obj\Debug\netcoreapp2.0\XUnitTestDontWineAboutIt.AssemblyInfoInputs.cache
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\obj\Debug\netcoreapp2.0\XUnitTestDontWineAboutIt.AssemblyInfo.cs
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\obj\Debug\netcoreapp2.0\XUnitTestDontWineAboutIt.dll
+C:\Users\Luay\Dropbox\401dotNet\Projects\Labs\Lab12-MVC\DontWineAboutIt\XUnitTestDontWineAboutIt\obj\Debug\netcoreapp2.0\XUnitTestDontWineAboutIt.pdb
